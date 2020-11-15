@@ -1,0 +1,135 @@
+.sideDrawer {
+  height: 100%;
+  background-color: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  /* how long the transform/movement be */
+  /* start fast and end slow */
+  transition: transform 0.3s ease-out;
+}
+
+/* this will ease the drawer when opening and closing */
+.sideDrawer.open {
+  transform: translateX(0);
+}
+
+.sideDrawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+/* .sideDrawer li {
+  margin: 0.5rem 0;
+}
+
+.sideDrawer a {
+  color: #521751;
+  text-decoration: none;
+  font-size: 1.5rem;
+} */
+
+/* .sideDrawer a:hover,
+.sideDrawer a:active {
+  color: #fa923f;
+} */
+
+/*  CSS for inside Drawers items  */
+/* .menu-bars-link {
+  margin-left: 12rem;
+  font-size: 2rem;
+  background: none;
+  display: flex;
+  flex-direction: row;
+} */
+
+.sideDrawer__menu-bars-link {
+  color: white;
+  text-decoration: none;
+  object-fit: contain;
+  /* display: flex;
+  object-fit: contain;
+  align-content: center; */
+}
+
+.sideDrawer__menu-bars-link-account {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.sideDrawer__menu-bars-link-close {
+  font-size: 1.5rem;
+  margin-left: 8rem;
+}
+
+.sideDrawer__menu-bars-link-account,
+.sideDrawer__menu-bars-link-close {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+
+.nav-text {
+  display: flex;
+  /*  justify-content: start; */
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 50px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #232f3e; /*#131921; */
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover,
+.nav-text a:active {
+  background-color: #f4f5f7;
+}
+
+.sideDrawer__nav-menu-items {
+  width: 100%;
+}
+
+.sideDrawer__navbar-toggle {
+  background-color: #232f3e;
+  width: 100%;
+  height: 60px;
+  /* justify-content: start; //try flex-start */
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+/* responsive design*/
+/*  If I am below 769px then implement the below rules */
+/* won't be available on DESKTOP mode / NO sideDraw on desktop...*/
+
+/* @media (min-width: 796px) {
+  .sideDrawer {
+    display: none;
+  }
+} */
